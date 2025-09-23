@@ -10,6 +10,7 @@ export default function Header() {
     { name: "Home", path: "/" },
     { name: "Product", path: "/product" },
     { name: "Blog", path: "/Blog" },
+    { name: "Post", path: "/post" },
     { name: "Profile", path: "/Profile" },
     { name: "About", path: "/About" },
     { name: "Contact", path: "/Contact" },

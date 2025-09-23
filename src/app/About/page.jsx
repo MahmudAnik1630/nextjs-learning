@@ -9,6 +9,7 @@ export default function About() {
 
       <Image
         src={Logo}
+        placeholder="blur"
         alt="Next.js Logo"
         width={400}
         height={200}
