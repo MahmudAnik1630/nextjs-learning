@@ -1,9 +1,18 @@
-import React from 'react'
+import Image from "next/image";
+import Logo from "@/assests/images/next.avif";
 
-function About() {
+export default function About() {
   return (
-    <div>About</div>
-  )
-}
+    <div>
+      <h1>About Page</h1>
+      <p>This is the about page of our application.</p>
 
-export default About
+      <Image
+        src={Logo}
+        alt="Next.js Logo"
+        width={400}
+        height={200}
+      />
+    </div>
+  );
+}
