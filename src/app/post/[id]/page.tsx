@@ -1,5 +1,16 @@
 import getPost from "@/app/apicalling/getPost";
 
+
+export async function generateMetadata({ params }: { params: { id: string } }) {
+  const { id } = params;
+  const post = await getPost(id);
+
+  return {
+    title: post.title,
+    description: post.body,
+  };
+}
+
 export default async function PostId({ params }: { params: { id: string } }) {
   const { id } = params;
 
